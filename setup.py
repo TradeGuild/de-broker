@@ -7,15 +7,15 @@ classifiers = [
 ]
 
 setup(
-    name='Swagxample',
-    version='0.0.3.1',
-    packages=['swagxample'],
-    url='https://bitbucket.org/deginner/swagxample',
+    name='De Exchange Broker',
+    version='0.0.0',
+    packages=['deexbroker'],
+    url='https://github.com/deginner/de-exchange-broker',
     license='MIT',
     classifiers=classifiers,
     author='deginner',
     author_email='support@deginner.com',
-    description='An HTTP server application using Swagger 2.0, bitjws, and SQLAlchemy.',
+    description='',
     setup_requires=['pytest-runner'],
     include_package_data = True,
     install_requires=[
@@ -30,9 +30,5 @@ setup(
         "sqlalchemy-login-models"
     ],
     tests_require=['pytest', 'pytest-cov'],
-    extras_require={"build": ["flask-swagger"]},
-    entry_points = """
-    [console_scripts]
-    createuser = create_user:create_user
-    """
+    extras_require={"build": ["flask-swagger"]}
 )
